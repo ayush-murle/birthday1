@@ -1,0 +1,103 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Shravani 🎀</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</style>
+</head>
+<body>
+
+<!-- 🎵 Background music: replace "song.mp3" with your own file placed in the same folder -->
+<audio id="bgMusic" loop preload="auto">
+  <source src="WhatsApp Audio 2026-07-15 at 1.05.32 AM.mpeg" type="audio/mpeg">
+</audio>
+
+<div id="stickerLayer"></div>
+
+<!-- ---------------- LOCK SCREEN ---------------- -->
+<div id="lockScreen">
+  <div class="lock-card">
+    <span class="envelope">💌</span>
+    <h1>A Little Secret...</h1>
+    <p>This surprise is just for you, Shravani.<br>Type the secret word to unlock it 🌸</p>
+    <input type="text" id="secretInput" placeholder="secret word..." autocomplete="off">
+    <button id="unlockBtn">Unlock my surprise 🔓</button>
+    <div id="lockError"></div>
+    <div id="lockHint">psst... it's something only you'd know 😉</div>
+  </div>
+</div>
+
+<!-- ---------------- MAIN CONTENT ---------------- -->
+<div id="mainContent">
+
+  <nav id="dots">
+    <a href="#hero" title="Home">🏠</a>
+    <a href="#gallery" title="Gallery">🖼️</a>
+    <a href="#message" title="Message">💌</a>
+    <a href="#cake" title="Cake">🎂</a>
+  </nav>
+
+  <section id="hero">
+    <h1>Happy Birthday Shravani! 🎀</h1>
+    <p class="sub">One more year more beautiful, more loved, and more you 💕</p>
+    <span class="cake-emoji">🎂🌸🦋</span>
+    <div class="scroll-cue">scroll for your surprise<span>↓</span></div>
+  </section>
+
+  <section id="gallery">
+    <h2 class="section-title">Our Little Gallery 🖼️</h2>
+    <p class="section-sub">Some of my favorite memories with you (photos coming soon!)</p>
+    <div class="gallery-grid">
+      <div class="polaroid"><div class="tape"></div><img src="WhatsApp Image 2026-07-15 at 1.16.07 AM.jpeg" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;"><div class="cap">that one day 💫</div></div>
+      <div class="polaroid"><div class="tape"></div><img src="WhatsApp Image 2026-07-15 at 1.06.46 AM.jpeg" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;"><div class="cap">my favorite smile</div></div>
+      <div class="polaroid"><div class="tape"></div><img src="photo3.jpg" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;"><div class="cap">us, always</div></div>
+      <div class="polaroid"><div class="tape"></div><img src="photo4.jpg" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;"><div class="cap">sweet moments</div></div>
+    </div>
+  </section>
+
+  <section id="message">
+    <h2 class="section-title">A Little Note For You 💌</h2>
+    <p class="section-sub">from me, to you</p>
+    <div class="letter">
+      <!-- Edit this message freely, it's yours to make personal -->
+      <p>My dearest Shravani,</p>
+      <p>Happy birthday to the person who makes even the most ordinary days feel like something worth smiling about. I don't say it enough, but you are the softest, warmest, most wonderful part of my life, and I never take that for granted.</p>
+      <p>I hope today reminds you of everything you deserve — to be celebrated, adored, and spoiled a little (okay, a lot). I made this tiny corner of the internet just for you, filled with stickers and cake and all the love I have, because you deserve a surprise as sweet as you are.</p>
+      <p>Here's to another year of your laugh being my favorite sound, your happiness being my favorite mission, and us making a hundred more little memories together.</p>
+      <p>I love you more than words (or websites) can really say.</p>
+      <div class="signoff">Forever yours, Shourya 💕</div>
+    </div>
+  </section>
+
+  <section id="cake">
+    <h2 class="section-title">Make a Wish 🎂</h2>
+    <p class="section-sub">Blow out the candle to make it come true</p>
+    <div class="cake-wrap">
+      <div class="cake-scene">
+        <div class="smoke" id="smoke"></div>
+        <div class="flame" id="flame"></div>
+        <div class="candle"></div>
+        <div class="tier tier1"></div>
+        <div class="tier tier2"></div>
+        <div class="plate"></div>
+      </div>
+      <button id="blowBtn">🎤 Blow the candle</button>
+      <button id="relightBtn">🔥 Relight the candle</button>
+      <div id="cakeHint">tap the button and blow into your mic — or just tap again to blow it out</div>
+      <div id="wishMsg">Yay! 🎉 Your wish is on its way...</div>
+    </div>
+  </section>
+
+  <footer>
+    made with <span class="heart">love💗</span> just for you, Shravani
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
