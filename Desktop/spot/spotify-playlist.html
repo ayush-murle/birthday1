@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: Arial,sans-serif;
+                background: linear-gradient(rgb(135, 135, 221));
+                text-align: center;
+                color: white;
+                padding: 50px;
+            }
+            h1{
+                color:rgb(77, 77, 146);
+            }
+            .card{
+                background: white;
+                color: black;
+                width: 500px;
+                margin: auto;
+                padding: 20px;
+                border-radius: 15px;
+                box-shadow: 0 5px 15px rgb(53, 52, 52);
+            }
+            button{
+                background: rgb(77, 77, 168);
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                margin: 10px;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+            button:hover{
+                background: rgb(60, 60, 165);
+            }
+            select{
+                padding: 10px;
+                width: 80%;
+                margin: 10px;
+            }
+            #box{
+                width: 150px;
+                height: 150px;
+                background: green;
+                margin: 20px auto;
+                border-radius: 10px;
+                transition: 0.5s;
+            }
+            #result{
+                font-size:20px;
+                font-weight: bold;
+                color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <h1>Welcome to Gaana.com</h1>
+            <button onclick="clickpause()"><i class="fa-solid fa-pause"></i>Pause</button>
+            <button onclick="clickEvent()"><i class="fa-solid fa-music"></i>Play</button><br>
+            <audio src="../images/Edd_Sheeran_-_Perfect_(mp3.pm).mp3" controls></audio>
+            
+            <select onchange="changeEvent(this.value)">
+                <option>Play the songs</option>
+                 <option>Jo tum mere ho</option>
+                  <option> Haseen</option>
+                   <option> Wishes</option>
+                    <option> Savera</option>
+            </select>
+            <!-- <div id="box" onmouseOver="mouseOver()" onmouseout="mouseOut()">
+            </div> -->
+            <p id="result">Event Output Here</p>
+        </div>
+        <script src="https://kit.fontawesome.com/18d423372c.js" crossorigin="anonymous"></script>
+        <script>
+            function clickEvent(){
+                document.getElementById("result").innerHTML="Playing.....";
+
+            }
+             function clickpause(){
+                document.getElementById("result").innerHTML="song is paused";}
+           
+            function changeEvent(value){
+                document.getElementById("result").innerHTML="Selected:"+value;
+            }
+            function mouseOver(){
+                document.getElementById("box").style.background="blue";
+                document.getElementById("result").innerHTML="Mouse Over Event";
+            }
+            function mouseOut(){
+                document.getElementById("box").style.background="orange";
+                document.getElementById("result").innerHTML="Mouse Out Event";
+
+            }
+            
+        </script>
+    </body>
+</html>
